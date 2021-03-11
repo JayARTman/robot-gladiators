@@ -1,3 +1,9 @@
+// Game States
+// "WIN" - Player robot has defeated all enemy-robots
+//    * Fight all enemy-robots
+//    * Defeat each enemy-robot
+// "LOSE" - Player robot's health is zero or less
+
 var playerName = window.prompt("What is your robot's name?");
 var playerHealth = 100;
 var playerAttack = 10;
@@ -8,7 +14,9 @@ console.log(playerName);
 console.log(playerHealth, playerAttack, playerMoney);
 console.log("You can put regular sentences in these.");
 
-var enemyName = "Roborto";
+var enemyNames = ["Roborto", "Amy Android", "Robo Trumble"];
+console.log(enemyNames[0]);
+
 var enemyHealth = 50;
 var enemyAttack = 12;
 
@@ -67,4 +75,5 @@ if (promptFight === "fight" || promptFight === "FIGHT") {
 };
 
 // run fight function to start game
-  fight();
+  //fight();
+
